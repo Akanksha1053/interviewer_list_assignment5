@@ -21,8 +21,8 @@ class Data extends ChangeNotifier {
       for(int i=0;i<data.length;i++){
         interviewerList.add(Interviewers.fromJson(data[i]));
         isSelectedList.add(false);
-        notifyListeners();
       }
+      notifyListeners();
     }
     catch(error)
     {
